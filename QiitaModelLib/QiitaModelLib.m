@@ -10,4 +10,8 @@
 
 @implementation QiitaModelLib
 
+- (void)hello {
+    NSLog(@"hello from library");
+}
+
 @end

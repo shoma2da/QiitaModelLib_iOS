@@ -10,4 +10,6 @@
 
 @interface QiitaModelLib : NSObject
 
+- (void) hello;
+
 @end
