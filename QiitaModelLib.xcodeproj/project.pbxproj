@@ -11,6 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 343DC06A1891443E00256358 /* Build configuration list for PBXAggregateTarget "QiitaModelLib.framework" */;
 			buildPhases = (
+				343DC06E1891475A00256358 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -239,6 +240,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343DC06E1891475A00256358 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./$(PROJECT_DIR)/scripts/create_framework.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		343DC03C189141B400256358 /* Sources */ = {
