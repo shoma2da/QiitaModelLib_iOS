@@ -6,6 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		343DC0691891443E00256358 /* QiitaModelLib.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 343DC06A1891443E00256358 /* Build configuration list for PBXAggregateTarget "QiitaModelLib.framework" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = QiitaModelLib.framework;
+			productName = QiitaModelLib.framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		343DC044189141B400256358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343DC043189141B400256358 /* Foundation.framework */; };
 		343DC049189141B400256358 /* QiitaModelLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 343DC048189141B400256358 /* QiitaModelLib.h */; };
@@ -53,6 +66,7 @@
 		343DC05B189141B400256358 /* QiitaModelLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QiitaModelLibTests-Info.plist"; sourceTree = "<group>"; };
 		343DC05D189141B400256358 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		343DC05F189141B400256358 /* QiitaModelLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiitaModelLibTests.m; sourceTree = "<group>"; };
+		343DC06D1891463200256358 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		343DC037189141B400256358 = {
 			isa = PBXGroup;
 			children = (
+				343DC06D1891463200256358 /* Info.plist */,
 				343DC045189141B400256358 /* QiitaModelLib */,
 				343DC059189141B400256358 /* QiitaModelLibTests */,
 				343DC042189141B400256358 /* Frameworks */,
@@ -189,6 +204,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Shoichi Matsuda";
+				TargetAttributes = {
+					343DC04F189141B400256358 = {
+						TestTargetID = 343DC0691891443E00256358;
+					};
+				};
 			};
 			buildConfigurationList = 343DC03B189141B400256358 /* Build configuration list for PBXProject "QiitaModelLib" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -204,6 +224,7 @@
 			targets = (
 				343DC03F189141B400256358 /* QiitaModelLib */,
 				343DC04F189141B400256358 /* QiitaModelLibTests */,
+				343DC0691891443E00256358 /* QiitaModelLib.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +391,7 @@
 				);
 				INFOPLIST_FILE = "QiitaModelLibTests/QiitaModelLibTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -377,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,7 +410,22 @@
 				GCC_PREFIX_HEADER = "QiitaModelLib/QiitaModelLib-Prefix.pch";
 				INFOPLIST_FILE = "QiitaModelLibTests/QiitaModelLibTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		343DC06B1891443E00256358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		343DC06C1891443E00256358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -415,6 +454,14 @@
 			buildConfigurations = (
 				343DC067189141B400256358 /* Debug */,
 				343DC068189141B400256358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		343DC06A1891443E00256358 /* Build configuration list for PBXAggregateTarget "QiitaModelLib.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343DC06B1891443E00256358 /* Debug */,
+				343DC06C1891443E00256358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

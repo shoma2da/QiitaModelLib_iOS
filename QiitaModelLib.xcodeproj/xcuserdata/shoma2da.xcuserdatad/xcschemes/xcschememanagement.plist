@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>QiitaModelLib.framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>QiitaModelLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>343DC04F189141B400256358</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>343DC0691891443E00256358</key>
 		<dict>
 			<key>primary</key>
 			<true/>
